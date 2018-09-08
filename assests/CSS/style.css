@@ -1,0 +1,58 @@
+.ig {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    float: left;
+    margin: 5px;
+}
+.gifHeart {
+    height: 30px;
+}
+body {
+    background-color: cornflowerblue;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+.but {
+    height: 50px;
+    width: 200px;
+    font-family: "Lobster", cursive;
+    font-size: 40px;
+    margin: 5px;
+}
+#buttons,
+#input {
+    background-color: black;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+#buttons {
+    position: fixed;
+    top: 50px;
+}
+#gifs {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+}
+#input {
+    position: fixed;
+    top: 0px;
+}
+.favorito {
+    float: left;
+    margin: 2px;
+}
+h1 {
+    font-size: 70px;
+}

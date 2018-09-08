@@ -230,6 +230,7 @@ function loadFavorites() {
 //Display number of favorites
 function updateFavCount() {
     $("#fav").html("<br><h2>You have " + fav + " favorites: <br><br><br>");
+    $("#fav").hide();
 }
 
 //On Load Function

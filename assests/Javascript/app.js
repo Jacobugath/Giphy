@@ -1,23 +1,13 @@
 //Declaring Global Variables
 var colors = [
-    "AntiqueWhite ",
     "Aqua ",
-    "Aquamarine ",
-    "Azure ",
-    "Beige ",
-    "Bisque ",
     "Black ",
-    "BlanchedAlmond ",
     "Blue ",
     "BlueViolet ",
     "Brown ",
     "BurlyWood ",
-    "CadetBlue ",
-    "Chartreuse ",
     "Chocolate ",
     "Coral ",
-    "CornflowerBlue ",
-    "Cornsilk ",
     "Crimson ",
     "Cyan ",
     "DarkBlue ",
@@ -45,45 +35,20 @@ var colors = [
     "DimGrey ",
     "DodgerBlue ",
     "FireBrick ",
-    "FloralWhite ",
     "ForestGreen ",
     "Fuchsia ",
-    "Gainsboro ",
-    "GhostWhite ",
     "Gold ",
     "GoldenRod ",
     "Gray ",
     "Grey ",
     "Green ",
     "GreenYellow ",
-    "HoneyDew ",
     "HotPink ",
     "IndianRed  ",
     "Indigo  ",
-    "Ivory ",
-    "Khaki ",
-    "Lavender ",
-    "LavenderBlush ",
     "LawnGreen ",
-    "LemonChiffon ",
-    "LightBlue ",
-    "LightCoral ",
-    "LightCyan ",
-    "LightGoldenRodYellow ",
-    "LightGray ",
-    "LightGrey ",
-    "LightGreen ",
-    "LightPink ",
-    "LightSalmon ",
-    "LightSeaGreen ",
-    "LightSkyBlue ",
-    "LightSlateGray ",
-    "LightSlateGrey ",
-    "LightSteelBlue ",
-    "LightYellow ",
     "Lime ",
     "LimeGreen ",
-    "Linen ",
     "Magenta ",
     "Maroon ",
     "MediumAquaMarine ",
@@ -96,22 +61,13 @@ var colors = [
     "MediumTurquoise ",
     "MediumVioletRed ",
     "MidnightBlue ",
-    "MintCream ",
     "MistyRose ",
-    "Moccasin ",
-    "NavajoWhite ",
     "Navy ",
-    "OldLace ",
     "Olive ",
     "OliveDrab ",
     "Orange ",
     "OrangeRed ",
     "Orchid ",
-    "PaleGoldenRod ",
-    "PaleGreen ",
-    "PaleTurquoise ",
-    "PaleVioletRed ",
-    "PapayaWhip ",
     "PeachPuff ",
     "Peru ",
     "Pink ",
@@ -126,27 +82,14 @@ var colors = [
     "Salmon ",
     "SandyBrown ",
     "SeaGreen ",
-    "SeaShell ",
     "Sienna ",
-    "Silver ",
-    "SkyBlue ",
-    "SlateBlue ",
-    "SlateGray ",
-    "SlateGrey ",
-    "Snow ",
     "SpringGreen ",
     "SteelBlue ",
-    "Tan ",
     "Teal ",
     "Thistle ",
     "Tomato ",
     "Turquoise ",
     "Violet ",
-    "Wheat ",
-    "White ",
-    "WhiteSmoke ",
-    "Yellow ",
-    "YellowGreen"
 ];
 
 var favs = [];
@@ -260,7 +203,7 @@ function add() {
 function loadButtons() {
     $("#buttons").empty();
     for (var i = 0; i < characters.length; i++) {
-        var rand = Math.floor(Math.random() * colors.length + 1);
+        var rand = Math.floor(Math.random() * colors.length);
 
         var searchValue = characters[i];
         var newButton = $("<button>").text(searchValue);
@@ -296,10 +239,12 @@ function buttonClick() {
                     response.data[j].images.original.url
                 );
                 var image = $("<img>").attr("src", imgURL);
+
                 var ig = $("<div>");
                 $("#gifs").append(emptyHeart);
                 ig.text("Rating: " + response.data[j].rating);
                 var image = $("<img>").attr("src", imgURL);
+                image.attr("src", imgURL);
                 emptyHeart.attr(
                     "data-url",
                     response.data[j].images.original.url
@@ -318,6 +263,7 @@ function buttonClick() {
                 var nb = $("<button>");
                 var li = $("<a>").text("Go to URL");
                 li.attr("href", response.data[j].images.original.url);
+                li.attr("class", "imgURL");
                 li.attr("download", "");
                 nb.append(li);
                 ig.addClass("ig");
@@ -329,14 +275,26 @@ function buttonClick() {
                     "data-dynamic",
                     response.data[j].images.original.url
                 );
+                image.attr(
+                    "class",
+                    "imgURL"
+                );
 
                 image.attr(
                     "data-static",
                     response.data[j].images.original_still.url
                 );
                 image.attr(
+                    "class",
+                    "imgURL"
+                );
+                image.attr(
                     "data-static",
                     response.data[j].images.original_still.url
+                );
+                image.attr(
+                    "class",
+                    "imgURL"
                 );
 
                 if (favs.indexOf(emptyHeart.attr("data-img")) >= 0) {

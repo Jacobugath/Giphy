@@ -1,3 +1,6 @@
+.imgURL{
+    width: 250px;
+}
 .ig {
     padding-right: 50px;
     padding-left: 50px;
@@ -5,6 +8,8 @@
     padding-bottom: 5px;
     float: left;
     margin: 5px;
+    Width: 300px;
+    float: left;
 }
 .gifHeart {
     height: 30px;
@@ -27,6 +32,7 @@ body {
     font-family: "Lobster", cursive;
     font-size: 40px;
     margin: 5px;
+    color: White;
 }
 #buttons,
 #input {
@@ -44,6 +50,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-left: 100px;
+    width: 250px;
 }
 #input {
     position: fixed;

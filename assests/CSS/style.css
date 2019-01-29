@@ -6,10 +6,8 @@
     padding-left: 50px;
     padding-top: 50px;
     padding-bottom: 5px;
-    float: left;
     margin: 5px;
     Width: 300px;
-    float: left;
 }
 .gifHeart {
     height: 30px;
@@ -20,8 +18,6 @@ body {
     padding-right: 100px;
 
     margin-top: 250px;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 30px;
     font-family: "Roboto", sans-serif;
     color: white;

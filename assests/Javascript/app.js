@@ -240,11 +240,12 @@ function buttonClick() {
                 );
                 var image = $("<img>").attr("src", imgURL);
 
-                var ig = $("<div>");
+                var ig = $("<p>");
                 $("#gifs").append(emptyHeart);
                 ig.text("Rating: " + response.data[j].rating);
                 var image = $("<img>").attr("src", imgURL);
                 image.attr("src", imgURL);
+                image.attr("class", "gifIm");
                 emptyHeart.attr(
                     "data-url",
                     response.data[j].images.original.url

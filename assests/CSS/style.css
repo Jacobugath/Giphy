@@ -1,5 +1,6 @@
 .imgURL{
-    width: 250px;
+    width: 300px;
+    height:200px;
 }
 .ig {
     padding-right: 50px;
@@ -7,7 +8,13 @@
     padding-top: 50px;
     padding-bottom: 5px;
     margin: 5px;
-    Width: 300px;
+    width: 300px;
+    height: 400px;
+
+    float: left;
+
+
+
 }
 .gifHeart {
     height: 30px;
@@ -43,10 +50,7 @@ body {
     top: 50px;
 }
 #gifs {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 100px;
-    width: 250px;
+    float: left;
 }
 #input {
     position: fixed;
@@ -58,4 +62,9 @@ body {
 }
 h1 {
     font-size: 70px;
+}
+.gifIm{
+    display: inline;
+    width: 250px;
+    height: 100px;
 }

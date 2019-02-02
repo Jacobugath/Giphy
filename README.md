@@ -1,6 +1,6 @@
 # Giphy
 
-This project is for the Giphy Assignment.
+This is an assignment I did to during the second half of the U of U Full Stack Development Bootcamp. The purpose of this assignment was to practice working with ajax and the GIPHY API. 
 
 This project is live on https://jacobugath.github.io/Giphy/
 
